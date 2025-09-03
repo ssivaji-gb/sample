@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/fav-icon.png" type="image/x-icon">
+    <title>Voter ID Form</title>
+    <link rel="stylesheet" href="style.css".css">
+    <style>
+        
+        body {
+            background-image: url(assets/bg-img.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .form-group {
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <form class="form-page" action="#" method="POST">
+        <div>
+            <div class="form-head-h1">
+                <h1>Voter ID Application</h1>
+            </div>
+
+            <div class="form-head-h2">
+                <h2>Personal Details</h2>
+            </div>
+
+            <div class="form-group">
+                <label for="img">Image(Passport-size) :</label> <br>
+                <input type="file">
+            </div>
+
+            <div class="form-group">
+                <label for="fname">First Name :</label> <br>
+                <input type="text" placeholder="Enter your first name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="lname">Last Name :</label> <br>
+                <input type="text" placeholder="Enter your last name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="DOB">Date Of Birth :</label> <br>
+                <input type="date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="caste">Caste :</label> <br>
+                <input type="text" placeholder="Enter your caste" required>
+            </div>
+
+            <div class="form-group">
+                <label for="religion">Religion :</label> <br>
+                <input type="text" placeholder="Enter your Religion" required>
+            </div>
+
+            <div class="form-group">
+                <label for="nationality">Nationality :</label> <br>
+                <input type="text" value="india" readonly>
+            </div>
+
+            <div class="form-group" class="radio-box">
+                <label for="disability">Disability :</label> <br>
+                <input class="radio-box" type="radio" name="disability" value="Yes" id="disability-yes">
+                <label for="disability-yes"> Yes</label>
+                <input class="radio-box"type="radio" value="No" name="disability" id="disability-no">
+                <label for="disability-no"> No </label>
+            </div>
+
+            <div class="form-group" class="radio-box">
+                <label for="Age">Age :</label> <br>
+                <input class="radio-box" type="checkbox" name="Age" id="Age-no">
+                <label for="Age-no"> I am 18 years older</label>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email ID :</label> <br>
+                <input type="email" placeholder="sample@gmail.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone-num">Phone Number :</label> <br>
+                <input type="tel" id="phone-num" placeholder="1234567890" maxlength="10" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address-deatail">
+                    <h1>Address Details</h1>
+                </label>
+
+                <div class="form-group">
+                    <label for="house-no">House/Door no :</label> <br>
+                    <input type="text" id="house-no" placeholder="Enter your House/Door no ">
+                </div>
+
+                <div class="form-group">
+                    <label for="Street">Street/Area/Locality :</label> <br>
+                    <input type="text" id="Street" placeholder="Enter your Street/Area/Locality ">
+                </div>
+            </div>
+
+            <!-- ----------------------------------Map Section----------------------------------------------------- -->
+
+            <div class="form-group">
+                <label for="map"> Google Location :</label><br>
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3358.2524304264653!2d78.02432427421147!3d8.726082391323647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b03f384691176ef%3A0x4f362c2f90e83e74!2sTuticorin%20Airport!5e1!3m2!1sen!2sin!4v1756722927840!5m2!1sen!2sin"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe> <br>
+
+                <div class="form-group">
+                    <label for="Residential">Residential : Town / Village: </label> <br>
+                    <select name="Residential" id="Residential">
+                        <option value="" disabled selected>-----Select-----</option>
+                        <option value="Anna Nagar">Anna Nagar</option>
+                        <option value="Koyambedu">Koyambedu</option>
+                        <option value="Inavaram">Inavaram</option>
+                        <option value="Vada Palani">Vada Palani</option>
+                        <option value="Porur">Porur</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="Taluk">Taluk :</label> <br>
+                    <input type="text" id="Taluk" placeholder="Enter your Taluk">
+                </div>
+
+                <div class="form-group">
+                    <label for="Pincode">Pincode :</label> <br>
+                    <input type="number" id="Pincode" placeholder="Enter your Pincode">
+                </div>
+
+                <div class="form-group">
+                    <label for="District">District : </label> <br>
+                    <select name="District" id="District">
+                        <option value="" disabled selected>-----Select-----</option>
+                        <option value="Tuticorin"> Tuticorin</option>
+                        <option value="Madurai">Madurai</option>
+                        <option value="Trichi">Trichi</option>
+                        <option value="Tirunelveli">Tirunelveli</option>
+                        <option value="Chennai">Chennai</option>
+                    </select>
+                </div>
+            </div>
+            <!-- -----------------------------------------------Certification Details-------------------------------------- -->
+
+            <div class="form-group">
+                <label for="Certification Details">
+                    <h2>Certification Details :</h2>
+                </label><br>
+
+                <div class="form-group">
+                    <label for="Community">Community Certification :</label><br>
+                    <input type="file" name="Community" id="Community">
+                </div>
+
+                <div class="form-group">
+                    <label for="Aadhar">Aadhar Card Certification :</label><br>
+                    <input type="file" name="Aadhar" id="Aadhar">
+                </div>
+
+                <div class="form-group">
+                    <label for="SSLC">SSLC Marksheet & Transfer Certification:</label><br>
+                    <input type="file" name="SSLC" id="SSLC">
+                </div>
+
+                <div class="form-group">
+                    <label for="HSLC">SSLC Marksheet & Transfer Certification:</label><br>
+                    <input type="file" name="HSLC" id="HSLC">
+                </div>
+
+                <!-- --------------------Signature & Register------------------------- -->
+
+                <div class="signature-register">
+                    <div class="signature">
+                        <label for="signature"> signature </label><br>
+                        <input class="signature" type="text">
+                    </div>
+                    <div class="btn">
+                        <button>Submit Application</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </form>
+</body>
+
+</html>
